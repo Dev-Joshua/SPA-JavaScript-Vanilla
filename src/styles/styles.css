@@ -72,6 +72,29 @@ body.dark {
   left: unset;
 }
 
+/* form button*/
+/* .header-searchForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  flex-wrap: nowrap;
+  margin: 25px 0;
+}
+.header-searchForm input {
+  height: 45px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.header-searchForm button {
+  width: 56px;
+  height: 51px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #fff;
+} */
+
 /* main */
 .Main {
   padding: 10px;
@@ -157,7 +180,7 @@ body.dark .Character-item h2 {
 
 .Character-item h2 {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   padding: 5px 10px;
   display: flex;
   justify-content: center;
