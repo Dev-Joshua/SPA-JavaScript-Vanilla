@@ -9,8 +9,8 @@ git:
 script:
   - yarn build
 deploy:
-  provider: pages,
-  edge: true,
+  provider: pages
+  edge: true
   skip-cleanup: true
   keep-history: true
   github-token: $GITHUB_TOKEN
