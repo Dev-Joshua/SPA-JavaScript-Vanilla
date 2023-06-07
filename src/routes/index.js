@@ -15,13 +15,18 @@ const router = async () => {
   const header = null || document.getElementById("header");
   const content = null || document.getElementById("content");
 
-  header.innerHTML = await Header();
-
   let hash = getHash();
   let route = await resolveRoutes(hash);
   let render = routes[route] ? routes[route] : Error404;
 
+  header.innerHTML = await Header();
   content.innerHTML = await render();
+
+  const btnSwitch = document.querySelector("#switch");
+  btnSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    btnSwitch.classList.toggle("active");
+  });
 };
 
 export default router;
